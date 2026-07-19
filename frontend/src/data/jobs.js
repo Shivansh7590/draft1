@@ -1,0 +1,68 @@
+export const departments = ['All', 'Engineering', 'Design', 'Operations', 'Marketing', 'Support'];
+
+export const jobs = [
+  {
+    id: 'senior-audio-engineer',
+    title: 'Senior Audio Engineer',
+    department: 'Engineering',
+    location: 'San Francisco, CA',
+    type: 'Full-time',
+    summary: 'Lead acoustic tuning and DSP development for next-generation Nimbus earbuds and headphones.',
+  },
+  {
+    id: 'product-designer-hardware',
+    title: 'Product Designer, Hardware',
+    department: 'Design',
+    location: 'San Francisco, CA',
+    type: 'Full-time',
+    summary: 'Shape the industrial design language of our premium audio and wearables portfolio.',
+  },
+  {
+    id: 'firmware-engineer',
+    title: 'Firmware Engineer',
+    department: 'Engineering',
+    location: 'Remote — US',
+    type: 'Full-time',
+    summary: 'Build low-latency audio firmware and connectivity stacks for embedded Nimbus devices.',
+  },
+  {
+    id: 'acoustic-research-scientist',
+    title: 'Acoustic Research Scientist',
+    department: 'Engineering',
+    location: 'Berlin, Germany',
+    type: 'Full-time',
+    summary: 'Advance noise cancellation, spatial audio, and transducer research in our Berlin studio.',
+  },
+  {
+    id: 'supply-chain-manager',
+    title: 'Supply Chain Manager',
+    department: 'Operations',
+    location: 'Austin, TX',
+    type: 'Full-time',
+    summary: 'Own supplier relationships, production planning, and fulfillment for global product launches.',
+  },
+  {
+    id: 'marketing-manager',
+    title: 'Brand Marketing Manager',
+    department: 'Marketing',
+    location: 'New York, NY',
+    type: 'Full-time',
+    summary: 'Drive campaigns and storytelling for consumer and corporate product lines worldwide.',
+  },
+  {
+    id: 'customer-experience-lead',
+    title: 'Customer Experience Lead',
+    department: 'Support',
+    location: 'Remote — US',
+    type: 'Full-time',
+    summary: 'Build world-class support programs for Nimbus customers and enterprise partners.',
+  },
+  {
+    id: 'software-engineer-web',
+    title: 'Software Engineer, Web',
+    department: 'Engineering',
+    location: 'San Francisco, CA',
+    type: 'Full-time',
+    summary: 'Develop the Nimbus e-commerce platform and customer-facing digital experiences.',
+  },
+];
