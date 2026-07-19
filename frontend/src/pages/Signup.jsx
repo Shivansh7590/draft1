@@ -89,7 +89,7 @@ export default function Signup() {
 
           <p className="mt-4 text-center text-sm text-slate">
                        Developed by <a href="https://www.linkedin.com/in/shivansh-tiwari-850a12319/">Shivansh Tiwari</a> and <a href="https://www.linkedin.com/in/kartikey-thakur-282092331/">Kartikey Singh</a>
-      <br>
+    <br />
             Already have an account?{' '}
             <Link to="/login" state={{ from: location.state?.from }} className="font-medium text-signal hover:text-signal">
               Sign in
