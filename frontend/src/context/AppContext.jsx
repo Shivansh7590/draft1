@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
 import { authService, cartService } from '../services';
 import { getCart, saveCart } from '../lib/utils';
 import { hydrateCartItems, mapServerCart, mergeCartItems } from '../lib/cartHelpers';
@@ -55,7 +55,22 @@ export function AuthProvider({ children }) {
 export function CartProvider({ children }) {
   const [items, setItems] = useState([]);
   const [cartReady, setCartReady] = useState(false);
-  const { user } = useAuth();
+  const { user, loading } = useAuth();
+  const wasLoggedIn = useRef(false);
+
+  // If a user was logged in and is now logged out, wipe the local cart so it
+  // doesn't get merged into whichever account logs in next on this device.
+  useEffect(() => {
+    if (loading) return;
+
+    if (user) {
+      wasLoggedIn.current = true;
+    } else if (wasLoggedIn.current) {
+      wasLoggedIn.current = false;
+      setItems([]);
+      saveCart([]);
+    }
+  }, [user, loading]);
 
   // Load & hydrate local cart on mount
   useEffect(() => {
