@@ -22,10 +22,6 @@ export default function Login() {
 
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: zodResolver(schema),
-    defaultValues: {
-      email: 'adminKS@nimbus.com',
-      password: '12345678',
-    },
   });
 
   const onSubmit = async (data) => {
