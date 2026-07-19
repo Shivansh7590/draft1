@@ -8,7 +8,7 @@
 
 A full-stack e-commerce demo for **Nimbus**, a fictional premium audio and wearables brand. Built to showcase modern web development skills for portfolio and resume use.
 
-**Live Demo:** https://www.nimbuselectronics.netlify.app
+**Live Demo:**https://nimbuselectronics.netlify.app/
 
 ---
 
