@@ -97,7 +97,7 @@ export default function Login() {
           </p>
 
           <p className="mt-2 text-center text-xs text-slate/70">
-            Demo: adminKS@nimbus.com / 12345678
+           Developed by <a href="https://www.linkedin.com/in/shivansh-tiwari-850a12319/">Shivansh Tiwari</a> and <a href="https://www.linkedin.com/in/kartikey-thakur-282092331/">Kartikey Singh</a>
           </p>
         </div>
       </div>
